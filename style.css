@@ -1,0 +1,42 @@
+:root {
+  --moyo-blue: #1a66ff;
+}
+*, *::before, *::after { 
+  box-sizing: border-box; 
+}
+header {
+  padding: 0;
+  display:flex;
+  align-items:center;
+}
+body{
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.nav__link{
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.nav__link.is-active{
+  position: relative; 
+} 
+.nav__link.is-active::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  bottom: -4px;
+  background: var(--moyo-blue);
+} 
+.nav__item{
+  margin-right: 28px;
+}
+.nav__item:last-child{
+  margin-right: 0;
+}
