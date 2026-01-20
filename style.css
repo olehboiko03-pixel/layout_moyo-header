@@ -1,11 +1,11 @@
-html { 
+html {
   box-sizing: border-box;
 }
 :root {
   --moyo-blue: #1a66ff;
 }
-html *, html *::before, html *::after { 
-  box-sizing: inherit; 
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 header {
   padding: 0;
@@ -16,7 +16,7 @@ header {
 }
 body{
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 500;
 }
 .nav__link{
@@ -28,8 +28,8 @@ body{
   font-weight: 500;
 }
 .nav__link.is-active{
-  position: relative; 
-} 
+  position: relative;
+}
 .nav__link.is-active::after{
   content: "";
   position: absolute;
@@ -38,23 +38,24 @@ body{
   height: 4px;
   bottom: 0px;
   background: var(--moyo-blue);
-} 
+}
 .nav__item{
   margin-right: 28px;
 }
 .nav__item:last-child{
   margin-right: 0;
+  padding: 0;
 }
-.nav__list { 
+.nav__list {
   margin:0;
   padding:0;
   list-style:none;
-  display:flex; 
+  display:flex;
   align-items:center;
 }
-.logo img { 
-  display:block 
+.logo img {
+  display:block;
 }
-.nav__link:hover { 
+.nav__link:hover {
 color: var(--moyo-blue);
 }
