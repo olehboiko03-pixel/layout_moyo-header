@@ -3,7 +3,7 @@ html {
 }
 
 :root {
-  --moyo-blue: #1a66ff;
+  --moyo-blue: #00ACDC;
 }
 
 *, *::before, *::after {
@@ -14,7 +14,7 @@ header {
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding: 0 16px;
+  padding: 0 50px;
 }
 
 body{
@@ -24,12 +24,13 @@ body{
 }
 
 .nav__link{
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 60px;
+  display: block;
   text-transform: uppercase;
   font-weight: 500;
+  font-size: 12px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .nav__link.is-active{
