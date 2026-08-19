@@ -6,11 +6,7 @@ html {
   --moyo-blue: #1a66ff;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-header {
+.header {
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -63,7 +59,7 @@ body{
   align-items:center;
 }
 
-.logo img {
+.header__logo {
   display:block;
 }
 
